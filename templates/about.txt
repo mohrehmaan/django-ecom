@@ -1,17 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title%}home  {% endblock %}</title>
+    <title>about</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -19,23 +18,20 @@
 <!-- header section starts  -->
 
 <header class="header">
-     <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-    </div>
 
-    <a href="{% url 'index' %}" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+    <a href="home.html" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
 
     <nav class="navbar">
-        <a href="{% url 'index' %}">home</a>
-        <a href="{% url 'shop' %}">shop</a>
-        <a href="{% url 'about' %}">about</a>
-        <a href="{% url 'review' %}">review</a>
-        <a href="{% url 'blog' %}">blog</a>
-        <a href="{% url 'contact' %}">contact</a>
+        <a href="home.html">home</a>
+        <a href="shop.html">shop</a>
+        <a href="about.html">about</a>
+        <a href="review.html">review</a>
+        <a href="blog.html">blog</a>
+        <a href="contact.html">contact</a>
     </nav>
 
     <div class="icons">
-        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+        <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search"></div>
         <div id="cart-btn" class="fas fa-shopping-cart"></div>
         <div id="login-btn" class="fas fa-user"></div>
@@ -49,7 +45,7 @@
     <div class="shopping-cart">
         <div class="box">
             <i class="fas fa-times"></i>
-            <img src="/static/images/cart-1.jpg" alt="">
+            <img src="image/cart-1.jpg" alt="">
             <div class="content">
                 <h3>organic food</h3>
                 <span class="quantity">1</span>
@@ -59,7 +55,7 @@
         </div>
         <div class="box">
             <i class="fas fa-times"></i>
-            <img src="/static/images/cart-2.jpg" alt="">
+            <img src="image/cart-2.jpg" alt="">
             <div class="content">
                 <h3>organic food</h3>
                 <span class="quantity">1</span>
@@ -69,7 +65,7 @@
         </div>
         <div class="box">
             <i class="fas fa-times"></i>
-            <img src="/static/images/cart-3.jpg" alt="">
+            <img src="image/cart-3.jpg" alt="">
             <div class="content">
                 <h3>organic food</h3>
                 <span class="quantity">1</span>
@@ -97,9 +93,111 @@
 </header>
 
 <!-- header section ends -->
-    {% block body%} {% endblock %}
-    
-    
+
+<div class="heading">
+    <h1>about us</h1>
+    <p> <a href="home.html">home >></a> about </p>
+</div>
+
+<section class="about">
+
+    <div class="image">
+        <img src="image/about-img.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <span>welcome to our shop</span>
+        <h3>fresh and organic groceries</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel sequi nostrum quae nobis non quaerat nisi voluptatibus recusandae reprehenderit tempore eligendi, eum quibusdam perferendis dicta, incidunt dolores nemo ex.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem cumque molestiae blanditiis deleniti aspernatur, ab tempora quisquam sapiente commodi hic.</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+</section>
+
+<section class="gallery">
+
+    <h1 class="title"> our <span>gallery</span> <a href="#">view all >></a> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/gallery-img-1.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/gallery-img-2.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/gallery-img-3.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/gallery-img-4.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/gallery-img-5.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/gallery-img-6.jpg" alt="">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share-alt"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- footer section starts  -->
 
 <section class="footer">
@@ -108,7 +206,7 @@
 
         <div class="box">
             <h3>quick links</h3>
-            <a href=""> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
             <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
             <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
             <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
@@ -141,14 +239,14 @@
                 <input type="email" placeholder="enter your email">
                 <input type="submit" value="subscribe" class="btn">
             </form>
-            <img src="/static/images/payment.png" class="payment" alt="">
+            <img src="image/payment.png" class="payment" alt="">
         </div>
 
     </div>
 
 </section>
 
-<section class="credit">created by moh rehmaan | all rights reserved!</section>
+<section class="credit">created by mr. web designer | all rights reserved!</section>
 
 <!-- footer section ends -->
 
@@ -165,7 +263,7 @@
 
 
 <!-- custom css file link  -->
-<script src="/static/js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>review</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -94,80 +94,109 @@
 
 <!-- header section ends -->
 
-<section class="home">
+<div class="heading">
+    <h1>client's review</h1>
+    <p> <a href="home.html">home >></a> review </p>
+</div>
 
-    <div class="slides-container">
+<section class="info-container">
 
-        <div class="slide active">
-            <div class="content">
-                <span>fresh and organic</span>
-                <h3>upto 50% off</h3>
-                <a href="#" class="btn">shop now</a>
-            </div>
-            <div class="image">
-                <img src="image/home-img-1.png" alt="">
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="content">
-                <span>fresh and organic</span>
-                <h3>upto 50% off</h3>
-                <a href="#" class="btn">shop now</a>
-            </div>
-            <div class="image">
-                <img src="image/home-img-2.png" alt="">
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="content">
-                <span>fresh and organic</span>
-                <h3>upto 50% off</h3>
-                <a href="#" class="btn">shop now</a>
-            </div>
-            <div class="image">
-                <img src="image/home-img-3.png" alt="">
-            </div>
-        </div>
-
-    </div>
-
-    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
-    <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
-
-</section>
-
-<section class="banner-container">
-
-    <div class="banner">
-        <img src="image/banner-1.jpg" alt="">
+    <div class="info">
+        <img src="image/icon-1.png" alt="">
         <div class="content">
-            <span>limited sales</span>
-            <h3>upto 50% off</h3>
-            <a href="#" class="btn">shop now</a>
+            <h3>fast delivery</h3>
+            <span>within 30 minutes</span>
         </div>
     </div>
 
-    <div class="banner">
-        <img src="image/banner-2.jpg" alt="">
+    <div class="info">
+        <img src="image/icon-2.png" alt="">
         <div class="content">
-            <span>limited sales</span>
-            <h3>upto 50% off</h3>
-            <a href="#" class="btn">shop now</a>
+            <h3>24 / 7 available</h3>
+            <span>call us anytime</span>
         </div>
     </div>
 
-    <div class="banner">
-        <img src="image/banner-3.jpg" alt="">
+    <div class="info">
+        <img src="image/icon-3.png" alt="">
         <div class="content">
-            <span>limited sales</span>
-            <h3>upto 50% off</h3>
-            <a href="#" class="btn">shop now</a>
+            <h3>easy payments</h3>
+            <span>cash or credits</span>
         </div>
     </div>
 
 </section>
+
+<section class="review">
+
+    <div class="box">
+        <div class="user">
+            <img src="image/pic-1.png" alt="">
+            <div class="info">
+                <h3>john deo</h3>
+                <span>happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae expedita culpa officiis harum impedit vel! Odit saepe similique vero!</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="image/pic-2.png" alt="">
+            <div class="info">
+                <h3>john deo</h3>
+                <span>happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae expedita culpa officiis harum impedit vel! Odit saepe similique vero!</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="image/pic-3.png" alt="">
+            <div class="info">
+                <h3>john deo</h3>
+                <span>happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae expedita culpa officiis harum impedit vel! Odit saepe similique vero!</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="image/pic-4.png" alt="">
+            <div class="info">
+                <h3>john deo</h3>
+                <span>happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae expedita culpa officiis harum impedit vel! Odit saepe similique vero!</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="image/pic-5.png" alt="">
+            <div class="info">
+                <h3>john deo</h3>
+                <span>happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae expedita culpa officiis harum impedit vel! Odit saepe similique vero!</p>
+    </div>
+
+    <div class="box">
+        <div class="user">
+            <img src="image/pic-6.png" alt="">
+            <div class="info">
+                <h3>john deo</h3>
+                <span>happy client</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem molestiae expedita culpa officiis harum impedit vel! Odit saepe similique vero!</p>
+    </div>
+
+</section>
+
 
 
 

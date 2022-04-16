@@ -1,17 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title%}home  {% endblock %}</title>
+    <title>home</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -19,23 +18,20 @@
 <!-- header section starts  -->
 
 <header class="header">
-     <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-    </div>
 
-    <a href="{% url 'index' %}" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+    <a href="home.html" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
 
     <nav class="navbar">
-        <a href="{% url 'index' %}">home</a>
-        <a href="{% url 'shop' %}">shop</a>
-        <a href="{% url 'about' %}">about</a>
-        <a href="{% url 'review' %}">review</a>
-        <a href="{% url 'blog' %}">blog</a>
-        <a href="{% url 'contact' %}">contact</a>
+        <a href="home.html">home</a>
+        <a href="shop.html">shop</a>
+        <a href="about.html">about</a>
+        <a href="review.html">review</a>
+        <a href="blog.html">blog</a>
+        <a href="contact.html">contact</a>
     </nav>
 
     <div class="icons">
-        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+        <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search"></div>
         <div id="cart-btn" class="fas fa-shopping-cart"></div>
         <div id="login-btn" class="fas fa-user"></div>
@@ -49,7 +45,7 @@
     <div class="shopping-cart">
         <div class="box">
             <i class="fas fa-times"></i>
-            <img src="/static/images/cart-1.jpg" alt="">
+            <img src="image/cart-1.jpg" alt="">
             <div class="content">
                 <h3>organic food</h3>
                 <span class="quantity">1</span>
@@ -59,7 +55,7 @@
         </div>
         <div class="box">
             <i class="fas fa-times"></i>
-            <img src="/static/images/cart-2.jpg" alt="">
+            <img src="image/cart-2.jpg" alt="">
             <div class="content">
                 <h3>organic food</h3>
                 <span class="quantity">1</span>
@@ -69,7 +65,7 @@
         </div>
         <div class="box">
             <i class="fas fa-times"></i>
-            <img src="/static/images/cart-3.jpg" alt="">
+            <img src="image/cart-3.jpg" alt="">
             <div class="content">
                 <h3>organic food</h3>
                 <span class="quantity">1</span>
@@ -97,9 +93,102 @@
 </header>
 
 <!-- header section ends -->
-    {% block body%} {% endblock %}
-    
-    
+
+<section class="home">
+
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                <span>fresh and organic</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/home-img-1.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>fresh and organic</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/home-img-2.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>fresh and organic</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/home-img-3.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+
+</section>
+
+<section class="banner-container home">
+
+    <div class="banner">
+        <img src="image/banner-1.jpg" alt="">
+        <div class="content">
+            <span>limited sales</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner-2.jpg" alt="">
+        <div class="content">
+            <span>limited sales</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner-3.jpg" alt="">
+        <div class="content">
+            <span>limited sales</span>
+            <h3>upto 50% off</h3>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- footer section starts  -->
 
 <section class="footer">
@@ -108,7 +197,7 @@
 
         <div class="box">
             <h3>quick links</h3>
-            <a href=""> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
             <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
             <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
             <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
@@ -141,14 +230,14 @@
                 <input type="email" placeholder="enter your email">
                 <input type="submit" value="subscribe" class="btn">
             </form>
-            <img src="/static/images/payment.png" class="payment" alt="">
+            <img src="image/payment.png" class="payment" alt="">
         </div>
 
     </div>
 
 </section>
 
-<section class="credit">created by moh rehmaan | all rights reserved!</section>
+<section class="credit">created by mr. web designer | all rights reserved!</section>
 
 <!-- footer section ends -->
 
@@ -165,7 +254,7 @@
 
 
 <!-- custom css file link  -->
-<script src="/static/js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

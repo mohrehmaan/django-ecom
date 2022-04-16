@@ -25,7 +25,9 @@ SECRET_KEY = 'sf%9c7%0z)kh5o!d6eagg*jdk@fc1619zzvde4hc=ipqjd*p54'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djangoecomweb.loca.lt',
+'127.0.0.1'
+]
 
 
 # Application definition
