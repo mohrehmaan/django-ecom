@@ -9,7 +9,18 @@
 
 <section class="category ">
 
-    <h1 class="title"> our <span>category</span> <a href="#">view all >></a> </h1>
+    <h1 class="title"> our <span>category</span> <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">view all >></a> </h1>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <div class="row">
+                {% for cat in category %}
+                <div class="col-sm"><h4 class="title"><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">{{cat.name}}</a></h4></div>
+
+            
+                {% endfor%}
+            </div>
+        </div>
+      </div>
 
     <div class="box-container home">
 

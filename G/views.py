@@ -1,4 +1,6 @@
+
 from django.shortcuts import render
+from ec.models import Category
 
 def ex(request):
     return render(request , 'ex.html')
@@ -8,10 +10,20 @@ def Master(request):
     return render(request , 'master.html')
 
 def Index(request):
-    return render(request , 'index.html')
+    category = Category.objects.all()
+
+    context = {
+        'category': category,
+    }
+    return render(request , 'index.html', context)
 
 def Shop(request):
-    return render(request , 'shop.html')
+    category = Category.objects.all()
+
+    context = {
+        'category': category,
+    }
+    return render(request , 'shop.html',context)
 
 def Review(request):
     return render(request , 'review.html')

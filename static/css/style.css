@@ -23,11 +23,14 @@ section {
   padding: 3rem 9%;
 }
 
+
+
 .heading {
   background: url(../images/heading-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
+  isolation: isolate;
   padding-top: 12rem;
   padding-bottom: 8rem;
 }
@@ -36,6 +39,10 @@ section {
   -webkit-animation: breathing 5s ease-out infinite normal;
     animation: breathing 5s ease-out infinite normal;
 } */
+a {
+  /* color: #0d6efd; */
+  text-decoration: none;
+}
 
 .heading h1 {
   color: #222;
@@ -100,6 +107,7 @@ section {
 
 .btn:hover {
   background: #222;
+  color: white;
 }
 
 .header {
@@ -983,6 +991,8 @@ section {
   height: 15rem;
   resize: none;
 }
+
+
 
 .contact .row .map {
   -webkit-box-flex: 1;
