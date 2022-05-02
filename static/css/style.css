@@ -23,7 +23,9 @@ section {
   padding: 3rem 9%;
 }
 
-
+.category{
+ font-size: 2.5rem; 
+}
 
 .heading {
   background: url(../images/heading-bg.jpg) no-repeat;
@@ -63,6 +65,7 @@ a {
 .heading p a:hover {
   color: #bac34e;
 }
+ 
 
 .title {
   display: -webkit-box;

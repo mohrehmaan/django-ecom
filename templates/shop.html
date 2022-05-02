@@ -8,13 +8,33 @@
 </div>
 
 <section class="category ">
-
+    
     <h1 class="title"> our <span>category</span> <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">view all >></a> </h1>
     <div class="collapse" id="collapseExample">
-        <div class="card card-body">
+        <div class="card card-body ">
             <div class="row">
                 {% for cat in category %}
-                <div class="col-sm"><h4 class="title"><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">{{cat.name}}</a></h4></div>
+                <div class="col-sm category">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h1 class="accordion-header" id="flush-heading-{{ forloop.counter }}">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ forloop.counter }}" aria-expanded="false" aria-controls="flush-collapse-{{ forloop.counter }}">
+                              {{cat.name}}
+                            </button>
+                          </h1>
+                          <div id="flush-collapse-{{ forloop.counter }}" class="accordion-collapse collapse" aria-labelledby="flush-heading-{{ forloop.counter }}" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    {% for i in cat.sub_category_set.all %}
+                                    <li><a href="#">{{i.name}}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                  </div>
 
             
                 {% endfor%}
